@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DependencyManagerCocoaPodsExmaple' do
+  pod 'DependencyManager', :path => '../'
+
+  target 'DependencyManagerTests' do
+    inherit! :search_paths
+
+  end
+
+end

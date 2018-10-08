@@ -1,0 +1,16 @@
+PODS:
+  - DependencyManager (0.1.0)
+
+DEPENDENCIES:
+  - DependencyManager (from `../`)
+
+EXTERNAL SOURCES:
+  DependencyManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DependencyManager: 34c4296534d1ec76ebafde4392359a18f6b1da93
+
+PODFILE CHECKSUM: e5ad1c9230721f68c63d9469a64de2eed2d531df
+
+COCOAPODS: 1.4.0

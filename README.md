@@ -11,10 +11,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Framework compliant with *Swift4.2* and by so require *XCode10*. 
+
 ## Installation
 
-DependencyManager is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+DependencyManager is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'DependencyManager'
@@ -27,3 +28,4 @@ Michael Vorontsov, mykhailov@starsgroup.com
 ## License
 
 DependencyManager is available under the MIT license. See the LICENSE file for more info.
+

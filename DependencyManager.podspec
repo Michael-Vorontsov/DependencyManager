@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DependencyManager'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Simple DependencyManager.'
   s.swift_version    = '4.2'
   s.description      = <<-DESC
@@ -11,7 +11,7 @@ Initialise it on demand in release if when no longer needed.
 
   s.homepage         = 'https://github.com/Michael-Vorontsov/DependencyManager'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Michael Vorontsov' => 'mykhailov@starsgroup.com' }
+  s.author           = { 'Michael Vorontsov' => 'michel06@ukr.net' }
   s.source           = { :git => 'https://github.com/Michael-Vorontsov/DependencyManager.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
   s.source_files = 'DependencyManager/Classes/**/*'

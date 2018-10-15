@@ -24,7 +24,7 @@ public protocol DependencyManagerProtocol: PublicServicePorotocol {
 }
 
 /// Empty protocol to declare conformance to classes that can be managed by DpendencyManager.
-public protocol PublicServicePorotocol: class {}
+@objc public protocol PublicServicePorotocol: class {}
 
 /// Dummy class to access Implementation of DependencyManager via shared
 public class DependencyManager: DependencyManagerProtocol {

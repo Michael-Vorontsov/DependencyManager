@@ -31,6 +31,17 @@ class ViewController: UIViewController {
         sendAction(self)
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination;
+        
+        if let index = self.tableView.indexPathForSelectedRow?.row,
+            destination.responds(to: Selector( ("setKey:") )) {
+            let key = self.strings[index]
+            destination.setValue(key, forKey: "key");
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

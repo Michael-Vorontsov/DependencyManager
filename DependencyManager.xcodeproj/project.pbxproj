@@ -10,6 +10,9 @@
 		099929D4216B99C200C6C21E /* DependencyManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099929CB216B99C200C6C21E /* DependencyManager.framework */; };
 		099929E0216B99C200C6C21E /* DependencyManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099929CB216B99C200C6C21E /* DependencyManager.framework */; };
 		099929E1216B99C200C6C21E /* DependencyManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 099929CB216B99C200C6C21E /* DependencyManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09A9B4462174C0B3003B79E3 /* DMDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9B4452174C0B3003B79E3 /* DMDependencyManager.swift */; };
+		09A9B4532174C876003B79E3 /* TextService.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A9B44D2174C55E003B79E3 /* TextService.m */; };
+		09A9B4572174D55B003B79E3 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A9B4552174D3C2003B79E3 /* DetailsViewController.m */; };
 		09FCACD2216B9BCA004601A0 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FCACD0216B9BCA004601A0 /* DependencyManager.swift */; };
 		09FCACD6216BA09A004601A0 /* StringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FCACD4216B9EC9004601A0 /* StringService.swift */; };
 		09FCACD8216BAAE0004601A0 /* DependencyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099929AC216B8D1400C6C21E /* DependencyManagerTests.swift */; };
@@ -65,6 +68,11 @@
 		099929D3216B99C200C6C21E /* DependencyManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099929E9216B99D800C6C21E /* DependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DependencyManager.h; sourceTree = "<group>"; };
 		099929EA216B99D800C6C21E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09A9B4452174C0B3003B79E3 /* DMDependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMDependencyManager.swift; sourceTree = "<group>"; };
+		09A9B4482174C500003B79E3 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		09A9B44C2174C55E003B79E3 /* TextService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextService.h; sourceTree = "<group>"; };
+		09A9B44D2174C55E003B79E3 /* TextService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextService.m; sourceTree = "<group>"; };
+		09A9B4552174D3C2003B79E3 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		09FCACD0216B9BCA004601A0 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		09FCACD4216B9EC9004601A0 /* StringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringService.swift; sourceTree = "<group>"; };
 		09FCAD38216CFF4B004601A0 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -125,10 +133,32 @@
 			path = DependencyManager;
 			sourceTree = "<group>";
 		};
+		09A9B4582174D984003B79E3 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				09A9B4552174D3C2003B79E3 /* DetailsViewController.m */,
+				09A9B4482174C500003B79E3 /* DetailsViewController.h */,
+				09A9B44C2174C55E003B79E3 /* TextService.h */,
+				09A9B44D2174C55E003B79E3 /* TextService.m */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		09A9B45B2174D99E003B79E3 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				09FCACD4216B9EC9004601A0 /* StringService.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		09FCACCF216B9BCA004601A0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				09FCACD0216B9BCA004601A0 /* DependencyManager.swift */,
+				09A9B4452174C0B3003B79E3 /* DMDependencyManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -158,9 +188,8 @@
 		607FACD21AFB9204008FA782 /* Example for DependencyManager */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				09FCACD4216B9EC9004601A0 /* StringService.swift */,
+				09A9B45B2174D99E003B79E3 /* Swift */,
+				09A9B4582174D984003B79E3 /* ObjC */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -276,6 +305,7 @@
 				TargetAttributes = {
 					099929CA216B99C200C6C21E = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					099929D2216B99C200C6C21E = {
@@ -343,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09FCACD2216B9BCA004601A0 /* DependencyManager.swift in Sources */,
+				09A9B4462174C0B3003B79E3 /* DMDependencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A9B4532174C876003B79E3 /* TextService.m in Sources */,
+				09A9B4572174D55B003B79E3 /* DetailsViewController.m in Sources */,
 				09FCACD6216BA09A004601A0 /* StringService.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -410,6 +443,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
